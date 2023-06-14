@@ -18,7 +18,7 @@
 
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.3.1/b-html5-1.3.1/b-print-1.3.1/r-2.1.1/rg-1.0.0/datatables.min.js"></script>
 <div class="card">
-    <h5 class="card-header">İstatistik Listesi</h5>
+    <h5 class="card-header">Statistics List</h5>
     <div class="card-body">
         <div class="row">
             <div class="col-md-9">
@@ -26,12 +26,10 @@
 
                     <thead>
                         <tr id="baslik">
-                            <th>PERSONEL ADI</th>
-                            <th>TAMAMLANAN PROJE SAYISI</th>
-                            <th>TAMAMLANMAYAN PROJE SAYISI</th>
-                            <th>TOPLAM PROJE SAYISI</th>
-
-
+                            <th>EMPLOYEE</th>
+                            <th>NUMBER OF COMPLETED PROJECTS</th>
+                            <th>NUMBER OF UNCOMPLETED PROJECTS</th>
+                            <th>TOTAL NUMBER OF PROJECTS</th>
 
 
                         </tr>
@@ -63,7 +61,7 @@
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                     <div class="me-2">
-                                        <small class="text-muted d-block mb-1">Toplam Personel</small>
+                                        <small class="text-muted d-block mb-1">Total Employees</small>
 
                                     </div>
                                     <div class="user-progress d-flex align-items-center gap-1">
@@ -78,7 +76,7 @@
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                     <div class="me-2">
-                                        <small class="text-muted d-block mb-1">Toplam Proje</small>
+                                        <small class="text-muted d-block mb-1">Total Project</small>
 
                                     </div>
                                     <div class="user-progress d-flex align-items-center gap-1">
@@ -94,7 +92,7 @@
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                     <div class="me-2">
-                                        <small class="text-muted d-block mb-1">Tamamlanan Proje</small>
+                                        <small class="text-muted d-block mb-1">Completed Project</small>
 
                                     </div>
                                     <div class="user-progress d-flex align-items-center gap-1">
@@ -109,7 +107,7 @@
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                     <div class="me-2">
-                                        <small class="text-muted d-block mb-1">Tamamlanmayan Proje</small>
+                                        <small class="text-muted d-block mb-1">Uncompleted Project</small>
 
                                     </div>
                                     <div class="user-progress d-flex align-items-center gap-1">
@@ -124,8 +122,8 @@
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                     <div class="me-2">
-                                        <small class="text-muted d-block mb-1">Yüksek Öncelikli</small>
-                                        <h6 class="mb-0">Tamamlanmayan</h6>
+                                        <small class="text-muted d-block mb-1">High Priority</small>
+                                        <h6 class="mb-0">Not Completed</h6>
                                     </div>
                                     <div class="user-progress d-flex align-items-center gap-1">
                                         <h6 class="mb-0">@ViewBag.YüksekVeBasarisiz</h6>
@@ -139,8 +137,8 @@
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                     <div class="me-2">
-                                        <small class="text-muted d-block mb-1">Orta Öncelikli</small>
-                                        <h6 class="mb-0">Tamamlanmayan</h6>
+                                        <small class="text-muted d-block mb-1">Medium Priority</small>
+                                        <h6 class="mb-0">Not Completed</h6>
                                     </div>
                                     <div class="user-progress d-flex align-items-center gap-1">
                                         <h6 class="mb-0">@ViewBag.OrtaVeBasarisiz</h6>
@@ -164,24 +162,24 @@
 <script>
     $('#istatistiklistele').DataTable({
         language: {
-            info: "_TOTAL_ kayıttan _START_ - _END_ kayıt gösteriliyor.",
-            infoEmpty: "Gösterilecek hiç kayıt yok.",
-            loadingRecords: "Kayıtlar yükleniyor.",
-            zeroRecords: "Tablo boş",
-            search: "Arama:",
-            infoFiltered: "(toplam _MAX_ kayıttan filtrelenenler)",
+            info: "Showing _START_ - _END_ record from _TOTAL_ record.",
+            infoEmpty: "There are no records to show.",
+            loadingRecords: "Loading Records.",
+            zeroRecords: "Empty Table",
+            search: "Search:",
+            infoFiltered: "(filtered from total _MAX_ records)",
             buttons: {
-                copyTitle: "Panoya kopyalandı.",
-                copySuccess: "Panoya %d satır kopyalandı",
-                copy: "Kopyala",
-                print: "Yazdır",
+                copyTitle: "Copied to clipboard.",
+                copySuccess: "%d lines copied to clipboard.",
+                copy: "Copy",
+                print: "Print",
             },
 
             paginate: {
-                first: "İlk",
-                previous: "Önceki",
-                next: "Sonraki",
-                last: "Son"
+                first: "First",
+                previous: "Previous",
+                next: "Next",
+                last: "Last"
             },
         },
         dom: 'Bfrtip',

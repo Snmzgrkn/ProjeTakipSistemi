@@ -23,22 +23,22 @@ namespace TakipProje.Controllers
             int tamamlanmamisProje = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false).Count();
             ViewBag.TamamlanmamisProje = tamamlanmamisProje;
 
-            var yuksekOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Yüksek Öncelikli").Count();
+            var yuksekOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "High Priority").Count();
             ViewBag.YüksekOncelikli = yuksekOncelikliProjeler;
 
-            var dusukOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Düşük Öncelikli").Count();
+            var dusukOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Low Priority").Count();
             ViewBag.DüsükOncelikli = dusukOncelikliProjeler;
 
-            var ortaOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Orta Öncelikli").Count();
+            var ortaOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Medium Priority").Count();
             ViewBag.OrtaOncelikli = ortaOncelikliProjeler;
 
-            var basariliVeYuksek = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true && p.OncelikDurumu == "Yüksek Öncelikli").Count();
+            var basariliVeYuksek = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true && p.OncelikDurumu == "High Priority").Count();
             ViewBag.YüksekVeBasarili = basariliVeYuksek;
 
-            var basariliVeOrta = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true && p.OncelikDurumu == "Orta Öncelikli").Count();
+            var basariliVeOrta = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true && p.OncelikDurumu == "Medium Priority").Count();
             ViewBag.OrtaVeBasarili = basariliVeOrta;
 
-            var basariliVeDusuk = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true && p.OncelikDurumu == "Düşük Öncelikli").Count();
+            var basariliVeDusuk = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true && p.OncelikDurumu == "Low Priority").Count();
             ViewBag.DüsükVeBasarili = basariliVeDusuk;
 
             var PersonelProjeListesi = db.PersonelProjeleris.ToList();
@@ -60,9 +60,10 @@ namespace TakipProje.Controllers
             var enCokTamamlananPersonelId = siraliPersonelListesi.First().Key;//En çok tamamlama sayısına sahip personeli al
             var enCokTamamlananPersonel = db.PersonelBilgileris.FirstOrDefault(p=>p.PersonelBilgileriId == enCokTamamlananPersonelId);
             ViewBag.EnCokTamamlayanPersonelBilgisi = enCokTamamlananPersonel.AdSoyad;
-
+            var enCokTamamlananPersonelGorseli = enCokTamamlananPersonel.PersonelGörseli;
             int enCokProjeTamamlayanPersonelProjeSayisi = personelTamamlanmisProjeSayisi[enCokTamamlananPersonelId];
             ViewBag.EnCokProjeTamamlayanPersonelinProjeSayisi = enCokProjeTamamlayanPersonelProjeSayisi;
+            ViewBag.EnCokTamamlananPersonelGorseli = enCokTamamlananPersonelGorseli;
             return View();
 
         }
@@ -123,10 +124,10 @@ namespace TakipProje.Controllers
             int tamamlanmamisProje = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false).Count();
             ViewBag.TamamlanmamisProje = tamamlanmamisProje;
 
-            var basarisizVeYuksek = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false && p.OncelikDurumu == "Yüksek Öncelikli").Count();
+            var basarisizVeYuksek = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false && p.OncelikDurumu == "High Priority").Count();
             ViewBag.YüksekVeBasarisiz = basarisizVeYuksek;
 
-            var basarisizVeOrta = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false && p.OncelikDurumu == "Orta Öncelikli").Count();
+            var basarisizVeOrta = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false && p.OncelikDurumu == "Medium Priority").Count();
             ViewBag.OrtaVeBasarisiz = basarisizVeOrta;
 
             return View(personeller);

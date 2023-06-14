@@ -806,7 +806,8 @@ intellisense.annotate(jQuery.fn, {
   },
   'ajaxSuccess': function() {
     /// <signature>
-    ///   <summary>Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.</summary>
+    ///   <summary>Attach a function to be executed whenever an Ajax request completes 
+y. This is an Ajax Event.</summary>
     ///   <param name="handler(event, XMLHttpRequest, ajaxOptions)" type="Function">The function to be invoked.</param>
     ///   <returns type="jQuery" />
     /// </signature>

@@ -52,24 +52,24 @@
                                     </g>
                                 </svg>
                             </span>
-                            <span class="app-brand-text demo text-body fw-bolder">UdemyPro</span>
+                            <span class="app-brand-text   text-body fw-bolder">Task Assignment Program 🚀</span>
                         </a>
                     </div>
                     <!-- /Logo -->
-                    <h4 class="mb-2">Görev Atama Programı 🚀</h4>
-                    <p class="mb-4">Bu sayfadan personellerinize görev atayabilirsiniz!</p>
+                  
+                    <p class="mb-4">You can assign tasks to your staff from this page!</p>
 
                     <form action="/PersonelProje/Create" method="post">
 
                         <div class="form-group">
-                            <label>Proje Başlığı</label>
-                            <input class="form-control" name="ProjeBaslik" type="text" placeholder="Lütfen Proje Başlığını Giriniz" />
+                            <label>Project Title</label>
+                            <input class="form-control" name="ProjeBaslik" type="text" placeholder="Please Enter Project Title" />
 
                         </div>
 
                         <div class="form-group">
-                            <label>Proje Açıklaması</label>
-                            <input class="form-control" name="ProjeAciklama" type="text" placeholder="Lütfen Proje Açıklaması Giriniz" />
+                            <label>Project Description</label>
+                            <input class="form-control" name="ProjeAciklama" type="text" placeholder="Please Enter Project Description" />
 
                         </div>
 
@@ -77,15 +77,15 @@
 
                         <div class="mb-3 col-md-12">
                             <label>
-                                Öncelik Durumu
+                                Priority Status
                             </label>
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-company2" class="input-group-text"><i class="bx bx-buildings"></i></span>
                                 <select name="OncelikDurumu" class="form-control" required>
-                                    <option value="Seçiniz">Seçiniz</option>
-                                    <option value="Yüksek Öncelikli">Yüksek Öncelikli</option>
-                                    <option value="Orta Öncelikli">Orta Öncelikli</option>
-                                    <option value="Düşük Öncelikli">Düşük Öncelikli</option>
+                                    <option value="Select">Select</option>
+                                    <option value="High Priority">High Priority</option>
+                                    <option value="Medium Priority">Medium Priority</option>
+                                    <option value="Low Priority">Low Priority</option>
 
                                 </select>
                             </div>
@@ -101,18 +101,16 @@
                         </div>
 
                         <div class="mt-2">
-                            <button type="submit" class="btn btn-primary me-2">Proje Oluştur</button>
-                            <a href="/PersonelBilgileris/Index/" class="btn btn-outline-secondary">Anasayfaya Dön</a>
+                            <button type="submit" class="btn btn-primary me-2">Create Project</button>
+                            <a href="/PersonelBilgileris/Index/" class="btn btn-outline-secondary">Back to Homepage</a>
                         </div>
 
 
                     </form>
 
                     <p class="text-center">
-                        <span>Herhangi bir sorunuz mu var?</span>
-                        <a href="#">
-                            <span>www.udemypro.com</span>
-                        </a>
+                        <span>HRMS</span>
+                        
                     </p>
                 </div>
             </div>

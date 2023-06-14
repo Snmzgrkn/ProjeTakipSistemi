@@ -15,56 +15,56 @@ namespace TakipProje.Models.Personel
         [Key]
         public int PersonelBilgileriId { get; set; }
 
-        [DisplayName("E POSTA")]
+        [DisplayName("EMAIL")]
         public string Eposta { get; set; }
-        [DisplayName("ŞİFRE")]
+        [DisplayName("PASSWORD")]
         [StringLength(25,ErrorMessage ="Maximum uzunluk 25 karakterden fazla olamaz")]
         public string Sifre { get; set; }
 
-        [DisplayName("YETKİ")]
+        [DisplayName("AUTHORITY")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string Yetki { get; set; }
 
-        [DisplayName("AD SOYAD")]
+        [DisplayName("NAME SURNAME")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string AdSoyad { get; set; }
-        [DisplayName("PERSONEL GÖRSELİ")]
+        [DisplayName("EMPLOYEE PHOTO")]
         public string PersonelGörseli { get; set; }
 
-        [DisplayName("TC KİMLİK NO")]
+        [DisplayName("TC NUMBER")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string TCNO { get; set; }
-        [DisplayName("DEPARTMANI")]
+        [DisplayName("DEPARTMANT")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string  Departman { get; set; }
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
-        [DisplayName("GÖREVİ")]
+        [DisplayName("POSITION")]
         public string Gorev { get; set; }
-        [DisplayName("AÇIKLAMA")]
+        [DisplayName("DESCRIPTION")]
         public string PozisyonAciklama { get; set; }
-        [DisplayName("TELEFON NUMARASI")]
+        [DisplayName("PHONE NUMBER")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string TelNo { get; set; }
-        [DisplayName("ADRES BİLGİLERİ")]
+        [DisplayName("ADRESS")]
         public string Adres { get; set; }
-        [DisplayName("MEDENİ HAL")]
+        [DisplayName("MARITAL STATUS")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string MedeniHal { get; set; }
-        [DisplayName("YAKINLIK BİLGİSİ")]
+        [DisplayName("FAMILY MEMBER INFORMATION")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string YakinBilgisi { get; set; }
-        [DisplayName("YAKIN TC NO")]
+        [DisplayName("FAMILY MEMBER TC NUMBER")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string YakinTC { get; set; }
-        [DisplayName("YAKIN AD SOYAD")]
+        [DisplayName("FAMILY MEMBER NAME SURNAME")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string YakinAdSoyad { get; set; }
-        [DisplayName("YAKIN TELEFONU")]
+        [DisplayName("FAMILY MEMBER PHONE NUMBER")]
         [StringLength(25, ErrorMessage = "Maximum uzunluk 25 karakterden fazla olamaz")]
         public string YakinTel { get; set; }
-        [DisplayName("DOĞUM TARİHİ")]
+        [DisplayName("DATE OF BIRTH")]
         public DateTime DogumTarihi { get; set; }
-        [DisplayName("İŞE GİRİŞ TARİHİ")]
+        [DisplayName("START DATE OF WORK")]
         public DateTime? IseGirisTarihi { get; set; }
 
         public virtual ICollection<PersonelProjeleri> PersonelProjeleris { get; set; }

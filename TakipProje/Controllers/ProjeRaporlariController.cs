@@ -21,7 +21,7 @@ namespace TakipProje.Controllers
         }
         public List<ClassOncelikDurumAnaliz> OncelikGrupTİpi()
         {
-            ;
+            
             List<ClassOncelikDurumAnaliz> snf = new List<ClassOncelikDurumAnaliz>();
             using (var c = new TakipProjeDBContext())
 
@@ -48,7 +48,7 @@ namespace TakipProje.Controllers
         }
         public List<ClassOncelikDurumAnaliz> OncelikTamamlanmisGrupTİpi()
         {
-            ;
+            
             List<ClassOncelikDurumAnaliz> snf = new List<ClassOncelikDurumAnaliz>();
             using (var c = new TakipProjeDBContext())
 
@@ -71,7 +71,7 @@ namespace TakipProje.Controllers
 
         public ActionResult CanliDestek()
         {
-            var destek = db.PersonelBilgileris.Where(x => x.Departman == "Yönetim");
+            var destek = db.PersonelBilgileris.Where(x => x.Departman == "Management");
             return View(destek.ToList());
         }
 

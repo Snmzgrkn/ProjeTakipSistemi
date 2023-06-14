@@ -51,16 +51,16 @@
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-building"></i></span>
                             <select name="Departman" class="form-control" required>
-                                <option value="Seçiniz">Seçiniz</option>
-                                <option value="Yazılım">Yazılım</option>
-                                <option value="Satış">Satış</option>
-                                <option value="Yönetim">Yönetim</option>
-                                <option value="Üretim">Üretim</option>
-                                <option value="Satın Alma">Satın Alma</option>
-                                <option value="Kalite">Kalite</option>
-                                <option value="Muhasebe">Muhasebe</option>
-                                <option value="İK">İK</option>
-                                <option value="İş Geliştirme">İş Geliştirme</option>
+                                <option value="Select">Select</option>
+                                <option value="Software">Software</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Management">Management</option>
+                                <option value="Production">Production</option>
+                                <option value="Purchase">Purchase</option>
+                                <option value="Quality">Quality</option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="HR">HR</option>
+                                <option value="Business Development">Business Development</option>
                             </select>
                         </div>
 
@@ -71,24 +71,24 @@
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-alarm"></i></span>
                             <select name="Gorev" class="form-control" required>
-                                <option value="Seçiniz">Seçiniz</option>
+                                <option value="Select">Select</option>
                                 <option value="Backend Developer">Backend Developer</option>
                                 <option value="Frontend Developer">Frontend Developer</option>
                                 <option value="Fullstack Developer">Fullstack Developer</option>
-                                <option value="IT Sorumlusu">IT Sorumlusu</option>
-                                <option value="Yazılım Takım Lideri">Yazılım Takım Lideri</option>
-                                <option value="Proje Yöneticisi">Proje Yöneticisi</option>
-                                <option value="Genel Müdür">Genel Müdür</option>
-                                <option value="Genel Müdür Yardımcısı">Genel Müdür Yardımcısı</option>
+                                <option value="IT Specialist">IT Specialist</option>
+                                <option value="Software Team Leader">Software Team Leader</option>
+                                <option value="Project Manager">Project Manager</option>
+                                <option value="General Manager">General Manager</option>
+                                <option value="Assistant General Manager">Assistant General Manager</option>
                                 <option value="CEO">CEO</option>
-                                <option value="Fabrika Müdürü">Fabrika Müdürü</option>
-                                <option value="Yönetim Temsilcisi">Yönetim Temsilcisi</option>
-                                <option value="Dış Ticaret Sorumlusu">Dış Ticaret Sorumlusu</option>
-                                <option value="Satın Alma Personeli">Satın Alma Personeli</option>
-                                <option value="Kalite Personeli">Kalite Personeli</option>
-                                <option value="Muhasebe Personeli">Muhasebe Personeli</option>
-                                <option value="İK Personeli">İK Personeli</option>
-                                <option value="İş Geliştirme">İş Geliştirme</option>
+                                <option value="Factory Manager">Factory Manager</option>
+                                <option value="Management Representative">Management Representative</option>
+                                <option value="Export Specialist">Export Specialist</option>
+                                <option value="Purchasing Staff">Purchasing Staff</option>
+                                <option value="Quality Staff">Quality Staff</option>
+                                <option value="Accounting Staff">Accounting Staff</option>
+                                <option value="HR Staff">HR Staff</option>
+                                <option value="Business Development Staff">Business Development Staff</option>
 
                             </select>
                         </div>
@@ -107,9 +107,9 @@
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-captions"></i></span>
                             <select name="Yetki" class="form-control" required>
-                                <option value="Seçiniz">Seçiniz</option>
-                                <option value="Üst Yönetim">Üst Yönetim</option>
-                                <option value="Yönetim">Yönetim</option>
+                                <option value="Select">Select</option>
+                                <option value="Senior Management">Senior Management</option>
+                                <option value="Management">Management</option>
                                 <option value="Normal">Normal</option>
 
 
@@ -142,13 +142,13 @@
                         <input type="datetime-local" class="form-control" id="IseGirisTarihi" name="IseGirisTarihi" value="">
                     </div>
                     <div class="mb-3 col-md-6">
-                        @Html.LabelFor(model => model.MedeniHal, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.LabelFor(model => model.MedeniHal, htmlAttributes: new { @class = "control-label col-md-6" })
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-select-multiple"></i></span>
                             <select name="MedeniHal" class="form-control" required>
-                                <option value="Seçiniz">Seçiniz</option>
-                                <option value="Bekar">Bekar</option>
-                                <option value="Evli">Evli</option>
+                                <option value="Select">Select</option>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
                             </select>
                         </div>
 
@@ -162,7 +162,7 @@
 
                     </div>
                     <div class="mb-3 col-md-6">
-                        @Html.LabelFor(model => model.PozisyonAciklama, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.LabelFor(model => model.PozisyonAciklama, htmlAttributes: new { @class = "control-label col-md-6" })
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-comment"></i></span>
                             <input type="text" class="form-control" id="PozisyonAciklama" name="PozisyonAciklama" value="">
@@ -174,13 +174,15 @@
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-comment"></i></span>
                             <select name="YakinBilgisi" class="form-control" required>
-                                <option value="Seçiniz">Seçiniz</option>
-                                <option value="Eşi">Eşi</option>
-                                <option value="Babası">Babası</option>
-                                <option value="Annesi">Annesi</option>
-                                <option value="Kardeşi">Kardeşi</option>
-                                <option value="Çocuğu">Çocuğu</option>
-                                <option value="Babası">Babası</option>
+                                <option value="Select">Select</option>
+                                <option value="Wife">Wife</option>
+                                <option value="Husband">Husband</option>
+                                <option value="Father">Father</option>
+                                <option value="Mother">Mother</option>
+                                <option value="Brother">Brother</option>
+                                <option value="Sister">Sister</option>
+                                <option value="Child">Child</option>
+                                
                             </select>
                         </div>
 
@@ -194,7 +196,7 @@
 
                     </div>
                     <div class="mb-3 col-md-6">
-                        @Html.LabelFor(model => model.YakinTC, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.LabelFor(model => model.YakinTC, htmlAttributes: new { @class = "control-label col-md-6" })
                         <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-id-card"></i></span>
                             <input type="text" class="form-control" id="YakinTC" name="YakinTC" value="">
@@ -211,8 +213,8 @@
                     </div>
                 </div>
                 <div class="mt-2">
-                    <button type="submit" class="btn btn-primary me-2">Personel Oluştur</button>
-                    <a href="/PersonelBilgileris/Index/" class="btn btn-outline-secondary">Anasayfaya Dön</a>
+                    <button type="submit" class="btn btn-primary me-2">Add Employee</button>
+                    <a href="/PersonelBilgileris/Index/" class="btn btn-outline-secondary">Back to Homepage</a>
                 </div>
             </form>
         </div>
