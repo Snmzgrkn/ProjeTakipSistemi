@@ -1,6 +1,6 @@
 # Proje Takip Sistemi
 
-Bu repo, .NET 5, C# ve MSSQL kullanılarak geliştirilen bir Proje Takip Sistemi'ni içermektedir. Bu sistem, kullanıcıların projeleri eklemesini, düzenlemesini, diğer kullanıcılara atamasını sağlamakla birlikte personel ekleme ve çıkarma işlemlerini de desteklemektedir.
+Bu repo, .NET 5,Entity Framework, C# ve MSSQL kullanılarak geliştirilen bir Proje Takip Sistemi'ni içermektedir. Bu sistem, kullanıcıların projeleri eklemesini, düzenlemesini, diğer kullanıcılara atamasını sağlamakla birlikte personel ekleme ve çıkarma işlemlerini de desteklemektedir.
 
 ## Özellikler
 
