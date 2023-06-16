@@ -14,7 +14,7 @@ Bu repo, .NET 5,Entity Framework, C# ve MSSQL kullanılarak geliştirilen bir Pr
 
 1. Bu repo'yu klonlayın.
 2. MSSQL veri tabanında bir veritabanı oluşturun.
-3. appsettings.json dosyasında veritabanı bağlantı ayarlarınızı yapın.
+3. webconfig dosyasında veritabanı bağlantı ayarlarınızı yapın.
 4. Proje Takip Sistemi uygulamasını derleyin ve çalıştırın.
 
 ## Kullanım
