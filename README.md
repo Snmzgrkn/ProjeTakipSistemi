@@ -8,7 +8,7 @@ Bu repo, .NET 5, C# ve MSSQL kullanılarak geliştirilen bir Proje Takip Sistemi
 - Kullanıcılar diğer kullanıcılara projeler atayabilir.
 - Personel ekleme ve çıkarma işlemleri.
 - Proje detaylarını görüntüleme ve güncelleme imkanı.
-- Güvenli giriş ve yetkilendirme sistemi.
+
 
 ## Kurulum
 
