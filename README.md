@@ -26,6 +26,9 @@ Bu repo, .NET 5,Entity Framework, C# ve MSSQL kullanılarak geliştirilen bir Pr
 5. Personel çıkarmak için personel listesinden ilgili personelin üzerine gelin ve çıkarma işlemini gerçekleştirin.
 
 > Not: Bu örnek projede kullanıcı girişi ve yetkilendirme sistemi uygulanmamıştır. İhtiyaçlarınıza göre kullanıcı girişi ve yetkilendirme sistemi ekleyebilirsiniz.
+![Proje Takip](https://github.com/Snmzgrkn/TakipProje/blob/master/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1.PNG)
+![Proje Takip](https://github.com/Snmzgrkn/TakipProje/blob/master/Ekran%20Al%C4%B1nt%C4%B1s%C4%B12.PNG)
+![Proje Takip](https://github.com/Snmzgrkn/TakipProje/blob/master/Ekran%20Al%C4%B1nt%C4%B1s%C4%B13.PNG)
 
 ## Katkı
 
